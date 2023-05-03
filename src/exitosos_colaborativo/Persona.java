@@ -50,6 +50,10 @@ public class Persona {
         }
 
     }
+    
+     public void setFechaNacimiento(String fechaNacimiento)throws IllegalArgumentException {
+        this.fechaNacimiento = generarFecha(fechaNacimiento);
+    }
 
     private LocalDate generarFecha(String fechaNacimiento) { //Funcion creada para devolver un dato correcto y en LocalDate
         LocalDate esFechaCorrecta = null;
