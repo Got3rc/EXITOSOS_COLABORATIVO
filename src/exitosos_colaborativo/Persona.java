@@ -47,70 +47,6 @@ public class Persona {
 
     }
 
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    /**
-     * Genera fecha de Nacimiento mediante un separador
-     *
-     * @param separador Indica el valor el cual se usará para separar los dias, meses y años
-     * @return Devuelve la fecha ya sea con el separador dado '-' o '/'
-     */
-    public String getFechaNacimiento(char separador) {
-        String fechaString = "";
-        LocalDate fechaLocalDate;
-        if (separador != '-' || separador != '/') {
-            throw new IllegalArgumentException();
-        } else if (separador == '-') {
-            fechaString = fechaNacimiento.format(GUION);
-        } else if (separador == '/') {
-            fechaString = fechaNacimiento.format(BARRAS);
-        }
-
-        return fechaString;
-    }
-
-    public String getFechaNacimiento() {
-        String fechaString = "";
-
-        if (this.fechaNacimiento == null) {
-            fechaString = null;
-        } else {
-            fechaString = getFechaNacimiento('-');
-        }
-
-        return fechaString;
-    }
-
-    public int getEdadEnFecha(String cadenaFecha) throws IllegalArgumentException {
-        int edad = 0;
-        String fechaStringDada = "";
-        String fechaStringOriginal = "";
-        LocalDate FechaLocal;
-        LocalDate FechaLocal2;
-        FechaLocal = generarFecha(cadenaFecha);
-        FechaLocal2 = this.fechaNacimiento;
-
-        if (this.fechaNacimiento == null || FechaLocal.isBefore(FechaLocal2)) { //En caso de que la persona no tenga establecida fecha o sea anterior
-            edad = -1;
-        } else {
-            Period periot = Period.between(FechaLocal2, FechaLocal);
-
-            edad = periot.getYears();
-        }
-
-        return edad;
-    }
-
-    public void setFechaNacimiento(String fechaNacimiento) throws IllegalArgumentException {
-        this.fechaNacimiento = generarFecha(fechaNacimiento);
-    }
-
     private LocalDate generarFecha(String fechaNacimiento) { //Funcion creada para devolver un dato correcto y en LocalDate
         LocalDate esFechaCorrecta = null;
         int dia = 0;
@@ -133,15 +69,7 @@ public class Persona {
 
     }
 
-    private boolean ComprobarString(String cadena) { //Funcion Creada para comprobar String no es null
-        boolean esStringCorrecta = false;
-        if (cadena.length() <= 0) {
-            esStringCorrecta = false;
-        } else {
-            esStringCorrecta = true;
-        }
-        return esStringCorrecta;
-    }
+
 
 }
 
