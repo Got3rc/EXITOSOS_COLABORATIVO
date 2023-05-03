@@ -38,6 +38,15 @@ public class Persona {
         return nombre;
     }
 
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+        
+
     public Persona(String nombre, String apellidos) {
 
         if (nombre.length() <= 0 || apellidos.length() <= 0) {
