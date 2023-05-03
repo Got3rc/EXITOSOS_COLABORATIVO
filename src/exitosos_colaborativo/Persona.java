@@ -4,10 +4,72 @@
  */
 package exitosos_colaborativo;
 
+import java.time.DateTimeException;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+
 /**
  *
  * @author Jorge
  */
 public class Persona {
-    
+
+    private String nombre;
+    private String apellidos;
+    private LocalDate fechaNacimiento;
+    private DateTimeFormatter GUION = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+    private DateTimeFormatter BARRAS = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+    public Persona(String nombre, String apellidos, String fechaNacimiento) throws IllegalArgumentException {
+
+        if (nombre.length() <= 0 || apellidos.length() <= 0) {
+            throw new IllegalArgumentException();
+        } else {
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.fechaNacimiento = generarFecha(fechaNacimiento); //Devolvera excepcion en caso de que la fecha no sea correcta y se propagará
+
+        }
+
+    }
+
+    public Persona(String nombre, String apellidos) {
+
+        if (nombre.length() <= 0 || apellidos.length() <= 0) {
+            throw new IllegalArgumentException();
+        } else {
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.fechaNacimiento = null;
+
+        }
+
+    }
+
+    private LocalDate generarFecha(String fechaNacimiento) { //Funcion creada para devolver un dato correcto y en LocalDate
+        LocalDate esFechaCorrecta = null;
+        int dia = 0;
+        int mes = 0;
+        int anyo = 0;
+        String[] fechaSeparada = fechaNacimiento.split("[-/]");
+        if (!fechaNacimiento.matches("[0-9]{2}[/][0-9]{2}[/][0-9]{4}")
+                && !fechaNacimiento.matches("[0-9]{2}[-][0-9]{2}[-][0-9]{4}")) { //Compruebo que el formato de la fecha sea correcta
+            throw new IllegalArgumentException();
+        }
+        try {
+            dia = Integer.parseInt(fechaSeparada[0]);
+            mes = Integer.parseInt(fechaSeparada[1]);
+            anyo = Integer.parseInt(fechaSeparada[2]);
+            return LocalDate.of(anyo, mes, dia); //Comprueba que la fecha es correcta ya que al crearlo si no es correcta salta excepcion
+
+        } catch (DateTimeException ex) {
+            throw new IllegalArgumentException();
+        }
+
+    }
+
+
+
 }
+
