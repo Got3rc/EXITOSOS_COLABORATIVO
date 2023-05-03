@@ -33,6 +33,10 @@ public class Persona {
         }
 
     }
+   
+        public String getNombre() {
+        return nombre;
+    }
 
     public Persona(String nombre, String apellidos) {
 
