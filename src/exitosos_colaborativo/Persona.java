@@ -73,7 +73,22 @@ public class Persona {
 
     }
 
+    public int getEdadEnFecha(String cadenaFecha) throws IllegalArgumentException {
 
+        int edad = -1;
+
+        LocalDate fechaIntro = generarFecha(cadenaFecha);
+        Period periodo;
+
+        if (this.fechaNacimiento != null && (this.fechaNacimiento.isBefore(fechaIntro) || this.fechaNacimiento.isEqual(fechaIntro))) {
+
+            periodo = Period.between(this.fechaNacimiento, fechaIntro);
+            edad = periodo.getYears();
+
+        }
+
+        return edad;
+    }
 
 }
 
