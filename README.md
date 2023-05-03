@@ -66,10 +66,10 @@ Microcomputer systems and networks technicians
 
 ## Connect with me  
 <div align="center">
-<a href="https://github.com/AlberrDev" target="_blank">
+<a href="">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
-<a href="https://linkedin.com/in/alberrdev" target="_blank">
+<a href="">
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
 </a>  
 </div>  
@@ -79,7 +79,7 @@ Microcomputer systems and networks technicians
 
 
 ## Github Stats  
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=AlberrDev&show_icons=true&count_private=true&hide_border=true" align="center" /></div>  
+<div  /></div>  
 
 <br/>  
 
