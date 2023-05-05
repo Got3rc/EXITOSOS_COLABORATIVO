@@ -20,6 +20,7 @@ public class Persona {
     private LocalDate fechaNacimiento;
     private DateTimeFormatter GUION = DateTimeFormatter.ofPattern("dd-MM-yyyy");
     private DateTimeFormatter BARRAS = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    private DateTimeFormatter FORMATO_GUION = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     public Persona(String nombre, String apellidos, String fechaNacimiento) throws IllegalArgumentException {
 
@@ -103,5 +104,15 @@ public class Persona {
         return edad;
     }
 
+    public int getEdad() { //Faltan comentarios
+        int edad;
+
+        LocalDate fechaActual = LocalDate.now();
+        
+        edad = getEdadEnFecha(fechaActual.format(FORMATO_GUION));
+
+        return edad;
+    }
+    
 }
 
