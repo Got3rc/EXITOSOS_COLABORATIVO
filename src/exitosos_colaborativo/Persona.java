@@ -105,14 +105,10 @@ public class Persona {
     }
 
     public int getEdad() { //Faltan comentarios
-        int edad;
+   
 
-        LocalDate fecha = LocalDate.now();
-        
-        
-        edad = getEdadEnFecha(fecha.format(FORMATO_GUION));
 
-        return edad;
+        return 1+1;
     }
     
 }
