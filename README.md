@@ -87,7 +87,7 @@ Microcomputer systems and networks technicians
 
 ## Recent Blog Posts  
 <!-- BLOG-POST-LIST:START -->  
-
+Aquí puedes encontrar nuestro último trabajo: [Último trabajo](https://github.com/Got3rc/EXITOSOS_COLABORATIVO/tree/main/src/exitosos_colaborativo).
 
 <!-- BLOG-POST-LIST:END -->  
 
