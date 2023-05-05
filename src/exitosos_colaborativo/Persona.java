@@ -107,9 +107,10 @@ public class Persona {
     public int getEdad() { //Faltan comentarios
         int edad;
 
-        LocalDate fechaActual = LocalDate.now();
+        LocalDate fecha = LocalDate.now();
         
-        edad = getEdadEnFecha(fechaActual.format(FORMATO_GUION));
+        
+        edad = getEdadEnFecha(fecha.format(FORMATO_GUION));
 
         return edad;
     }
