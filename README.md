@@ -87,7 +87,7 @@ Microcomputer systems and networks technicians
 
 ## Recent Blog Posts  
 <!-- BLOG-POST-LIST:START -->  
-Here you can find our last project: [Last Project](https://github.com/Got3rc/EXITOSOS_COLABORATIVO/tree/main/src/exitosos_colaborativo).
+Here you can find our newest projects: [Clase Persona](https://github.com/Got3rc/EXITOSOS_COLABORATIVO/tree/main/src/exitosos_colaborativo).
 
 <!-- BLOG-POST-LIST:END -->  
 
