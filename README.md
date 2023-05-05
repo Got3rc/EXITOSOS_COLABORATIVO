@@ -81,8 +81,6 @@ Microcomputer systems and networks technicians
 <br/>  
 
 
-## Github Stats  
-<div  /></div>  
 
 <br/>  
 
