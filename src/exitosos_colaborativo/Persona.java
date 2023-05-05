@@ -104,7 +104,7 @@ public class Persona {
         return edad;
     }
 
-    public int getEdad() {
+    public int getEdad() { //Faltan comentarios
         int edad;
 
         LocalDate fechaActual = LocalDate.now();
