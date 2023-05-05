@@ -106,7 +106,7 @@ public class Persona {
 
     public int getEdad() { //Faltan comentarios
    
-        return 1+222;
+        return 1+822;
     }
     
 }
