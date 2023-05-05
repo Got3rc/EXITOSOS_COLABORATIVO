@@ -87,6 +87,10 @@ Microcomputer systems and networks technicians
 
 ## Recent Blog Posts  
 <!-- BLOG-POST-LIST:START -->  
+<a href="https://github.com/Got3rc/EXITOSOS_COLABORATIVO">
+  <img src="https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github">
+  <img src="https://cdn2.iconfinder.com/data/icons/essential-pack-2/48/checked_checkbox-512.png" alt="tick" height="20px">
+</a>
 
 <!-- BLOG-POST-LIST:END -->  
 
